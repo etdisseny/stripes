@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+$blue:#244F75;
+$cyan:#60BFBF;
+$purple:#8C4B7E;
+$yelow:#F8BB44;
+$red:#F24B4B;
+
+@import "components/mixings";
+@import "components/nesting";
+
+.flex{
+    display: flex;
+    overflow: hidden;
+    text-align: center;
+    
+}
+
+.column{
+    @include columnas;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: #fff;
+    font-size: 2rem;
+    position: relative;
+    overflow: hidden;
+    
+    
+}
+.sombra{
+    @include sombra;
+}
+
+.sombra:hover{
+    width: 250%;
+    
+}

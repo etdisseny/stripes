@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.flex .blue {
+  background: #244F75;
+  animation-name: movimiento1;
+  animation-duration: 1s;
+  animation-timing-function: ease-out; }
+
+@keyframes movimiento1 {
+  from {
+    transform: translate(-120%); }
+  to {
+    transform: translate(0%); } }
+
+.flex .cyan {
+  background: #60BFBF;
+  animation-name: movimiento2;
+  animation-duration: 1s;
+  animation-timing-function: ease-out; }
+
+@keyframes movimiento2 {
+  from {
+    transform: translateY(100%); }
+  to {
+    transform: translateY(0%); } }
+
+.flex .purple {
+  background: #8C4B7E;
+  animation-name: movimiento3;
+  animation-duration: 1s;
+  animation-timing-function: ease-out; }
+
+@keyframes movimiento3 {
+  from {
+    transform: translateY(-100%); }
+  to {
+    transform: translateY(0%); } }
+
+.flex .yelow {
+  background: #F8BB44;
+  animation-name: movimiento4;
+  animation-duration: 1s;
+  animation-timing-function: ease-out; }
+
+@keyframes movimiento4 {
+  from {
+    transform: translateY(100%); }
+  to {
+    transform: translateY(0%); } }
+
+.flex .red {
+  background: #F24B4B;
+  animation-name: movimiento5;
+  animation-duration: 1s;
+  animation-timing-function: ease-out; }
+
+@keyframes movimiento5 {
+  from {
+    transform: translateX(120%); }
+  to {
+    transform: translateX(0%); } }
+
+.flex {
+  display: flex;
+  overflow: hidden;
+  text-align: center; }
+
+.column {
+  width: 20%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 2rem;
+  position: relative;
+  overflow: hidden; }
+
+.sombra {
+  position: absolute;
+  background-color: #fff;
+  opacity: .1;
+  height: 100%;
+  width: 90%;
+  transform: skewX(20deg);
+  transition: width .3s ease; }
+
+.sombra:hover {
+  width: 250%; }

@@ -1,0 +1,20 @@
+@mixin columnas{
+    width: 20%;
+    height: 100vh; 
+}
+
+@mixin animaciones($movimiento){
+    animation-name: $movimiento;
+    animation-duration:1s;
+    animation-timing-function: ease-out;
+}
+
+@mixin sombra{
+    position: absolute;
+    background-color: #fff;
+    opacity: .1;
+    height: 100%;
+    width:90%;
+    transform: skewX(20deg);
+    transition: width .3s ease;
+}

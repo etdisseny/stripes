@@ -1,0 +1,46 @@
+
+.flex{
+    .blue{
+        background: $blue;
+        @keyframes movimiento1{
+            from {transform:translate(-120%);} 
+            to {transform:translate(0%);}
+        }
+        @include animaciones(movimiento1); 
+       
+        
+    }
+    .cyan{
+        background: $cyan;
+        @keyframes movimiento2{
+            from {transform:translateY(100%);} 
+            to {transform:translateY(0%);}
+        }
+        @include animaciones(movimiento2); 
+         
+    }
+    .purple{
+        background: $purple;
+        @keyframes movimiento3{
+            from {transform:translateY(-100%);} 
+            to {transform:translateY(0%);}
+        }
+        @include animaciones(movimiento3); 
+    }
+    .yelow{
+        background: $yelow;
+        @keyframes movimiento4{
+            from {transform:translateY(100%);} 
+            to {transform:translateY(0%);}
+        }
+        @include animaciones(movimiento4); 
+    }
+    .red{
+        background:$red;
+        @keyframes movimiento5{
+            from {transform:translateX(120%);} 
+            to {transform:translateX(0%);}
+        }
+        @include animaciones(movimiento5); 
+    }
+}
